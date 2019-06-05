@@ -1,0 +1,141 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   font-family: 'Ubuntu Mono', monospace;
+   color: white;
+   font-size: 16px;
+}
+
+h1 {
+   text-align: center;
+   margin: .3em;
+   font-size: 3em;
+}
+
+h2 {
+   font-size: 2em;
+   text-align: center;
+}
+
+h3 {
+   font-size: 1.3em;
+}
+
+#root {
+   min-height: 1000px;
+   background-image: url(img/bg.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   overflow: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#winner {
+   min-height: 9em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   width: 85%;
+}
+
+#roundsResult {
+   min-height: 11em;
+   display: flex;
+   justify-content: space-between;
+}
+
+#roundsResult h3 {
+   width: 95%
+}
+
+.rocket {
+   text-align: center;
+   background-image: url(img/rocket.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center top;
+   height: 250px;
+   width: 50%
+}
+
+.rocket h1 {
+   padding-top: 250px;
+}
+
+#startBtn {
+   flex-basis: 70%;
+   display: flex;
+   justify-content: center;
+}
+
+#startBtn h2 {
+   border: 1px solid transparent;
+   display: inline-block;
+   height: 1.1em;
+   padding: 20px;
+   background-color: #1EA9B0;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 200ms;
+}
+
+#startBtn h2:hover {
+   transform: scale(1.1);
+   opacity: .9
+}
+
+
+@media (max-width: 1030px) {
+
+   .rocket {
+      height: 175px;
+   }
+
+   .rocket h1 {
+      padding-top: 175px;
+   }
+}
+
+@media (max-width: 920px) {
+   body {
+      font-size: 14px
+   }
+}
+
+@media (max-width: 840px) {
+   .rocket {
+      height: 100px;
+   }
+
+   .rocket h1 {
+      padding-top: 100px;
+   }
+}
+
+@media (max-width: 720px) {
+   #roundsResult {
+      order: 1;
+   }
+
+   .rocket {
+      background-image: none;
+   }
+
+   .rocket h1 {
+      padding-top: 50px;
+   }
+
+   #startBtn h2 {
+      padding: 10px
+   }
+
+}
